@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Group radio</title>
+    <style>
+        .container{
+            margin-bottom: 1rem;
+        }
+        .container .column{
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+        .container .column:not(:last-child){
+            padding-right: 0.6rem;
+            border-right:1px solid black;
+        }
+        .container .column:not(:first-child){
+            padding-left: 0.6rem;
+        }
+        .container .columnhead{
+            text-transform: uppercase;
+            margin-bottom: 0.6rem;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Group radio selections</h1>
+    <div id="container" class="container"></div>
+    <button onclick="onClickCreate()">Create</button>
+    <button onclick="onClickUnset()">Unset</button>
+    <div id="selectedcolumnvalues"></div>
+</body>
+<script src="script.js"></script>
+</html>
